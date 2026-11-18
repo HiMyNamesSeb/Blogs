@@ -3,10 +3,10 @@
 📅 **Date:** November 18, 2026
 🧩 **Phases:** [Phase 0: Separate control experiments](https://github.com/HiMyNamesSeb/rc-tank/tree/main/phase-0-separate-control) · [Phase 1: Proof of concept](https://github.com/HiMyNamesSeb/rc-tank/tree/main/phase-1-proof-of-concept)
 
+Today was the first real day of the RC tank. The plan for the tank is treads, a turret that turns left and right, and a barrel that tilts up and down. Today was all about the turret and barrel, on a breadboard, using parts from my ELEGOO starter kit. 🔌
+
 ## ⭐ Favorite part
 My favorite part was the silicone bottle opener I got from the **Equitable** career fair. I used it to mount the servo on top of the stepper motor, like the turret on the finished tank would be. 🍾➡️🎯
-
-Today was the first real day of the RC tank. The plan for the tank is treads, a turret that turns left and right, and a barrel that tilts up and down. Today was all about the turret and barrel, on a breadboard, using parts from my ELEGOO starter kit. 🔌
 
 ## ⚙️ Part 1 - Getting each motor to move (Phase 0)
 
