@@ -7,4 +7,4 @@ This is my day-by-day log of building a DIY wall-mounted display for my room: Go
 ## Days
 | Day | Post | Phase |
 |---|---|---|
-| _No posts yet_ | | |
+| 1 | [Day 1 - Planning Before Buying](d1-planning-before-buying.md) | Phase 0 |
