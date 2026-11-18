@@ -26,7 +26,7 @@ Next I set it up the way the tank will actually use it, on an Arduino Nano:
 
 I used the kit's breadboard power module at 5V for the motors, kept the Nano running off the computer's USB, and tied all the grounds together on one GND rail.
 
-Before the full demo I ran two small sketches, one for just the servo and one for just the stepper, to make sure the wiring was right on its own.
+Claude helped me write the Phase 1 code. Before the full demo I ran two small sketches, one for just the servo and one for just the stepper, to make sure the wiring was right on its own.
 
 The demo sketch is controlled by typing commands in the Serial Monitor (`e120` for barrel angle, `u`/`d` to nudge it, `t90` to turn the turret, `demo` to move both). The big difference from Phase 0 is that the loop **never waits**. Every pass it just checks: is it time to move the servo one degree? Is it time to take one stepper step? That's why both motors can move together.
 
@@ -45,4 +45,4 @@ Phase 2: drive motors and treads. That means a tread chassis, a TB6612FNG motor 
 ---
 
 ## Credits
-Built with help from online electrical engineering tutorials. Claude was used for formatting and presentation.
+I do the physical build, wiring and testing myself. Claude (an AI assistant) heavily helps me write the code, including the Phase 1 demo and test sketches, and helps write and format these posts. I'm also learning from online electrical engineering tutorials.
