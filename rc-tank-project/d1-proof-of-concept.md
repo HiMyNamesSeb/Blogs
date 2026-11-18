@@ -17,6 +17,8 @@ Both worked, but neither felt right:
 - In V1, `Stepper.step()` **blocks**. While the stepper is stepping, the Arduino can't do anything else, so the servo and stepper can't move at the same time.
 - In V2, `runSpeed()` only takes one step each time it's called, and my `delay(30)` meant it only got called about 33 times a second. So the stepper was capped at around 33 steps per second no matter how far I pushed the joystick.
 
+Honestly, I almost short circuited everything a few times. But learning about potentiometers, buttons, and the joystick was a good learning experience. The joystick was a lot more responsive to my movements, so it was good.
+
 ## Part 2 - The demo (Phase 1)
 
 Next I set it up the way the tank will actually use it, on an Arduino Nano:
@@ -32,15 +34,13 @@ The demo sketch is controlled by typing commands in the Serial Monitor (`e120` f
 
 **First run: nothing happened.** I thought something was wrong, but the sketch was just sitting there waiting for me to type a command. Typing `demo` made the barrel tilt and the turret spin at the same time. 🎉
 
-## What I learned
-- `delay()` and blocking functions are the enemy when you want two things moving at once. Checking `millis()` / `micros()` and only acting when it's time fixes it.
-- The 28BYJ-48 needs its pins in the order IN1, IN3, IN2, IN4 with the `Stepper` library, or it just buzzes.
-- Every ground has to meet on the same rail. A missing shared ground makes the servo twitch and things act random.
-- The microcontroller and the motors can run from different power sources, as long as they share ground.
-- When a sketch "does nothing", check whether it's waiting for input before assuming the wiring is wrong.
+To keep the stepper motor and servo together, I had to use a silicone can opener I got from a career fair to mount the servo on top of the stepper motor, like the finished product would be. It was worth it though.
 
-## Next up
-Phase 2: drive motors and treads. That means a tread chassis, a TB6612FNG motor driver, a battery and a 5V buck converter, none of which I've bought yet.
+## What I learned
+I learned how to be more efficient with power and wiring. Most importantly, the monitoring was something I had no clue about. I didn't know there was a sort of terminal (the Serial Monitor) that I could send commands into, and that changes everything for me. I also liked the clean wiring and learning more about the stepper motor module.
+
+## Hardest part
+The most frustrating thing was trying to keep everything together. I made a huge mess with everything: the wires, the components, the cables, everything. I was also working with a DC motor earlier and snapped the connected cables, so I had to solder the cables back on. I think I did something wrong though, because now the motor stopped working. So the soldering iron and everything added even more mess on top of my already messy desk.
 
 ---
 
