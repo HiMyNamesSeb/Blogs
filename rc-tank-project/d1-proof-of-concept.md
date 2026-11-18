@@ -8,6 +8,12 @@ Today was the first real day of the RC tank. The plan for the tank is treads, a 
 ## ⭐ Favorite part
 My favorite part was the silicone bottle opener I got from the **Equitable** career fair. I used it to mount the servo on top of the stepper motor, like the turret on the finished tank would be. 🍾➡️🎯
 
+<p align="center">
+  <img src="media/d1-servo-on-stepper-bottle-opener.jpg" alt="SG90 micro servo mounted on top of a 28BYJ-48 stepper motor using a white silicone bottle opener from the Equitable career fair, with jumper wires running to a breadboard and Arduino Nano" width="420">
+  <br>
+  <em>The "turret": servo on top of the stepper, held together by the Equitable bottle opener 🍾</em>
+</p>
+
 ## ⚙️ Part 1 - Getting each motor to move (Phase 0)
 
 Before anything else I wanted to know I could actually make the motors move. I hooked up a joystick module, an SG90 servo and a 28BYJ-48 stepper motor with its ULN2003 driver board.
